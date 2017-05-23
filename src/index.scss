@@ -1,0 +1,32 @@
+/**
+ * Dialog of milkui-component
+ * @author caiyongmin
+ *
+ * Copyright 2017-2019, All rights reserved.
+ */
+
+.milkui-dialog {
+  padding: 15px 10px;
+  border: 1px solid #00d8ff;
+  border-radius: 5px;
+  background-color: #00d8ff;
+  box-shadow: 0 2px 3px rgba(0,0,0,.15);
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+  &:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+  }
+}
+
+.milkui-dialog__icon {
+  width: 28px;
+  height: 28px;
+  fill: #fff;
+  vertical-align: middle;
+}
+
+.milkui-dialog__text {
+  vertical-align: middle;
+}
