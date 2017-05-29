@@ -25,6 +25,7 @@
   "dependencies": {
     "classnames": "~2.2.3",
     "fastclick": "~1.0.6",
+    "milkui-mask": "^0.1.0",
     "react": "~15.4.2",
     "react-dom": "~15.4.2"
   },

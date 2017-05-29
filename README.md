@@ -18,7 +18,10 @@ import Dialog from 'milkui-dialog';
 
 | Properties | Type | Description | Default |
 | -- | -- | -- | -- |
-| className | String | 自定义的 class 类名 | '' |
+| className | String | 追加的 class 类名 | '' |
+| title | String | 对话框标题 | '' |
+| show | Boolean | 是否显示 | false |
+| buttons | Array | 定义操作按钮的数组 | [] |
 
 ## 开发
 

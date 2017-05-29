@@ -6,27 +6,75 @@
  */
 
 .milkui-dialog {
-  padding: 15px 10px;
-  border: 1px solid #00d8ff;
-  border-radius: 5px;
-  background-color: #00d8ff;
-  box-shadow: 0 2px 3px rgba(0,0,0,.15);
+  display: none;
+}
+
+.milkui-dialog_show {
+  display: block;
+}
+
+.milkui-dialog__content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  max-width: 650px;
+  border-radius: 6px;
+  background-color: #fff;
   font-size: 28px;
-  color: #fff;
-  cursor: pointer;
-  transition: all .15s ease-in-out;
-  &:hover {
-    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+  text-align: center;
+  overflow: hidden;
+  transform: translate(-50%,-50%);
+  z-index: 5000;
+}
+
+.milkui-dialog__header {
+  padding: 30px 30px 12px;
+}
+
+.milkui-dialog__title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+}
+
+.milkui-dialog__body {
+  height: 100%;
+  padding: 0 30px 30px;
+  font-size: 28px;
+  color: #999;
+  line-height: 1.4;
+  overflow: auto;
+
+  &:first-child {
+    padding-top: 42px;
   }
 }
 
-.milkui-dialog__icon {
-  width: 28px;
-  height: 28px;
-  fill: #fff;
-  vertical-align: middle;
+.milkui-dialog__footer {
+  display: flex;
+  border-top: 1px solid #d5d5d6;
 }
 
-.milkui-dialog__text {
-  vertical-align: middle;
+.milkui-dialog__btn {
+  position: relative;
+  display: block;
+  flex: 1;
+  height: 100px;
+  border-left: 1px solid #d5d5d6;
+  font-size: 32px;
+  color: #3cc51f;
+  line-height: 100px;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+  &:first-child {
+    border-left-width: 0px;
+  }
+}
+
+.milkui-dialog__btn_default {
+  color: #353535;
 }

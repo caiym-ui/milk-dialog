@@ -23,3 +23,26 @@
 .demo-item {
   margin-top: 20px;
 }
+
+.milkui-btn {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 25px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.55555556;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.milkui-btn_default {
+  color: #000;
+  background-color: #f8f8f8;
+  border-color: rgba(0,0,0,.2);
+}
