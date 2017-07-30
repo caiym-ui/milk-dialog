@@ -35,12 +35,12 @@ class Demo extends Component {
     const { show1, show2, style1, style2 } = this.state;
 
     return (
-      <div className="demo-panel">
-        <div className="demo-title">Milk UI</div>
-        <div className="demo-description">Demo Page 😀.</div>
-        <div className="demo-item">
+      <div className="demo__panel">
+        <div className="demo__title">Milk UI</div>
+        <div className="demo__description">Demo Page 😀.</div>
+        <div className="demo__item">
           <div
-            className="milkui-btn milkui-btn_default"
+            className="milkui__btn milkui__btn_default"
             onClick={() => { this.setState({ show1: true }); }}
           >iOS Dialog Style1</div>
           <Dialog
@@ -49,9 +49,9 @@ class Demo extends Component {
             title={style1.title}
           >弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内</Dialog>
         </div>
-        <div className="demo-item">
+        <div className="demo__item">
           <div
-            className="milkui-btn milkui-btn_default"
+            className="milkui__btn milkui__btn_default"
             onClick={() => { this.setState({ show2: true }); }}
           >iOS Dialog Style2</div>
           <Dialog
