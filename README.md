@@ -1,38 +1,47 @@
 # milkui-dialog
 
-组件描述
+> 组件描述用作显示系统的重要信息，并请求用户进行操作反馈，eg：删除某个重要内容时，弹出 Modal 进行二次确认。
 
-## 效果图
+## Overview
 
-...some images
+![image](https://user-images.githubusercontent.com/11053605/28750816-5de32266-7528-11e7-90c9-9326f460c61e.png)
 
-## 使用
+## Example
 
 ```js
 import Dialog from 'milkui-dialog';
 
-<Dialog></Dialog>
+<Dialog
+  show={show1}
+  buttons={style1.buttons}
+  title={style1.title}
+>弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内</Dialog>
+
+<Dialog
+  show={show2}
+  buttons={style2.buttons}
+>弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内</Dialog>
 ```
 
-## 参数
+## Properties
 
-| Properties | Type | Description | Default |
+| Property | Type | Description | Default |
 | -- | -- | -- | -- |
 | className | String | 追加的 class 类名 | '' |
 | title | String | 对话框标题 | '' |
 | show | Boolean | 是否显示 | false |
 | buttons | Array | 定义操作按钮的数组 | [] |
 
-## 开发
-
-### install
+## Develop
 
 ```bash
-cnpm i milk-dev -g    # 组件开发工具
+cnpm i milk-dev -g    # dev tool
+
 cnpm install
+
 npm start
 ```
 
-## 链接
+## Links
 
 - [Issues](https://github.com/milk-ui/milkui-dialog/issues)
