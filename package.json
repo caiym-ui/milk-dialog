@@ -7,6 +7,7 @@
   "main": "build/bundle.js",
   "scripts": {
     "start": "milk-dev run start",
+    "test": "milk-dev run test",
     "build": "milk-dev run build",
     "pub": "milk-dev run publish"
   },
@@ -26,9 +27,16 @@
     "classnames": "~2.2.3",
     "fastclick": "~1.0.6",
     "milkui-mask": "^0.1.0",
+    "object-assign": "~4.1.1",
     "react": "~15.4.2",
     "react-dom": "~15.4.2"
   },
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {
+    "console-polyfill": "~0.3.0",
+    "enzyme": "~2.9.1",
+    "expect.js": "~0.3.1",
+    "react-addons-test-utils": "~15.4.2",
+    "react-test-renderer": "~15.4.2"
+  }
 }

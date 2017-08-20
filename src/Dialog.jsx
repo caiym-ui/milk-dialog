@@ -56,10 +56,13 @@ class Dialog extends Component {
               buttons.map((btn) => {
                 const { label, type, ...others } = btn;
                 if (type === 'primary') {
-                  return <span className="milkui-dialog__btn" {...others}>{label}</span>;
+                  return (<span key={label} className="milkui-dialog__btn" {...others}>
+                    {label}
+                  </span>);
                 }
                 return (
                   <span
+                    key={label}
                     className="milkui-dialog__btn milkui-dialog__btn_default" {...others}
                   >{label}</span>);
               })
