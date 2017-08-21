@@ -1,5 +1,9 @@
 # milkui-dialog
 
+[![npm version](https://img.shields.io/npm/v/milkui-dialog.svg?style=flat)](https://www.npmjs.com/package/milkui-dialog) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](README.md)
+
+[![NPM](https://nodei.co/npm/milkui-dialog.png?downloads=true&downloadRank=true)](https://nodei.co/npm/milkui-dialog/)
+
 > 组件描述用作显示系统的重要信息，并请求用户进行操作反馈，eg：删除某个重要内容时，弹出 Modal 进行二次确认。
 
 ## Overview
